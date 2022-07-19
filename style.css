@@ -38,4 +38,28 @@ body{
   align-items: center;
   background: #ff4081;
   transition: 0.5s;
+  cursor: pointer;
+}
+
+.navigation .toggle.active{
+  background: #2196f3;
+}
+
+
+.navigation ,.toggle::before{
+  content: '+';
+  position: absolute;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.navigation .toggle.active::before{
+  transform: rotate(315deg);
 }
